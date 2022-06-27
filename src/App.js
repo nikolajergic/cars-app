@@ -8,18 +8,11 @@ import {
 } from "react-router-dom";
 import AppCars from './pages/AppCars';
 
-function App() {
-  <Switch>
-    <Route path="/cars" exact>
-      <AppCars />
-    </Route>
-  </Switch>
-  
 
+function App() {
 return (
     <div className="App">
       <Router>
-        <div>
           <nav>
             <ul>
               <li>
@@ -32,7 +25,6 @@ return (
               <AppCars />
             </Route>
           </Switch>
-        </div>
       </Router>
     </div>
   );
