@@ -13,6 +13,11 @@ function Car({  id,brand,model,year,maxSpeed,isAutomatic,engine,numberOfDoors}) 
               }}>
                <p>Brand: {brand}</p>
                <p>Model: {model}</p>
+               <p>Year: {year}</p>
+               <p>Max Speed: {maxSpeed}</p>
+               <p>Is automatic: {isAutomatic}</p>
+               <p>Engine: {engine}</p>
+               <p>Number of Doors: {numberOfDoors}</p>
             </div>
           )
 

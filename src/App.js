@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import AppCars from './pages/AppCars';
+import AddCar from './pages/AddCar';
 
 
 function App() {
@@ -20,9 +21,19 @@ return (
               </li>
             </ul>
           </nav>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/add">Add</Link>
+              </li>
+            </ul>
+          </nav>
           <Switch>
             <Route path="/cars" exact>
               <AppCars />
+            </Route>
+            <Route path="/add" exact>
+              <AddCar />
             </Route>
           </Switch>
       </Router>
