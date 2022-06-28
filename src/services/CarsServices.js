@@ -9,7 +9,7 @@ class CarsServices{
 
     async getAll() {
         try {
-            const {data} = await this.httpClient.get()
+            const {data} = await this.httpClient.get(`/api/cars`)
 
             return data;
         } catch (error) {
